@@ -1,2 +1,3 @@
-# CGQC_Base
-Minimal setup for playing with other squads
+# CGQC Core
+Assets custom pour le groupe CGQC
+Core contiens tout ce qui est custom et/ou dépend du jeux vanilla.
