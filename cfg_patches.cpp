@@ -25,6 +25,17 @@ class CfgPatches
 		// List of objects (CfgVehicles classes) contained in the addon. Important also for Zeus content (units and groups) unlocking.
 		units[] = {
 			"CGQC_Soldat_Base",
+			"CGQC_Soldat_Rifleman",
+			"CGQC_Soldat_TL",
+			"CGQC_Soldat_Medic",
+			"CGQC_Soldat_Maaws",
+			"CGQC_Soldat_HeliPilot",
+			"CGQC_Soldat_Sniper",
+			"CGQC_Soldat_Marksman",
+			"CGQC_Soldat_Javelin",
+			"CGQC_Soldat_Grenadier",
+			"CGQC_Soldat_LMG",
+			"CGQC_Soldat_HMG",
 			"cgqc_pack_mk1_magic",
 			"cgqc_flag_coop_black",
 			"cgqc_flag_coop_white",
