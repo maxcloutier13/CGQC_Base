@@ -3,10 +3,10 @@ class B_Soldier_f;
 class CGQC_Soldat_Base : B_Soldier_f
 {
 	author = "silent1";
-	faction = "CGQC";
 	editorSubcategory = "EdSubcat_cgqc_Training";
 	side = 1;
-	displayName = "Soldat";
+	faction = "CGQC";
+	displayName = "Soldat (Training)";
 	uniformClass = "cgqc_uniform_mk1";
 	camouflage = 1.4;
 	weapons[] = {"Rangefinder", "cgqc_gun_p99_wood", "Put", "Throw"};
@@ -32,4 +32,158 @@ class CGQC_Soldat_Base : B_Soldier_f
 	class EventHandlers {
         //init = "[] spawn CGQC_fnc_initTraining";
     };
+};
+class CGQC_Soldat_Rifleman : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "Rifleman";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_assault";
+	weapons[] = {"cgqc_gun_base_rifleman", "cgqc_gun_p99_wood", "Rangefinder", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_lr", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_M", "ACE_acc_pointer_green", "optic_Arco_blk_F", "", "", "", "", ""};
+};
+class CGQC_Soldat_TL : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "TeamLeader";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_Radiobag";
+	weapons[] = {"cgqc_gun_base_tl", "cgqc_gun_p99_wood", "Laserdesignator_01_khk_F", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_rf", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_M", "ACE_acc_pointer_green", "ACE_optic_Hamr_2D", "", "", "", "", ""};
+};
+class CGQC_Soldat_Medic : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "Medic";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_carryall";
+	weapons[] = {"cgqc_gun_base_rifleman", "cgqc_gun_p99_wood", "Rangefinder", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade", "SmokeShellPurple", "SmokeShellPurple", "SmokeShellPurple"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool", "ACE_salineIV", "ACE_salineIV", "ACE_salineIV", "ACE_salineIV", "ACE_salineIV", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_salineIV_250", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_morphine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_epinephrine", "ACE_splint", "ACE_splint", "ACE_splint", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_tourniquet", "ACE_tourniquet", "ACE_SpraypaintRed", "ACE_personalAidKit", "ACE_personalAidKit"};
+	linkedItems[] = {"cgqc_vest_mk1_tan", "cgqc_helmet_mk1_medic", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_M", "ACE_acc_pointer_green", "optic_Arco_blk_F", "", "", "", "", ""};
+};
+class CGQC_Soldat_Maaws : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "AT (Maaws)";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_carryall";
+	weapons[] = {"cgqc_gun_base_rifleman", "launch_MRAWS_green_rail_F", "cgqc_gun_p99_wood", "Rangefinder", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade", "MRAWS_HEAT_F", "MRAWS_HEAT_F", "MRAWS_HEAT_F", "MRAWS_HEAT_F"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_lr", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_M", "ACE_acc_pointer_green", "optic_Arco_blk_F", "", "", "", "", ""};
+};
+class CGQC_Soldat_HeliPilot : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "Pilot (Helicopter)";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1_helipilot";
+	backpack = "B_Parachute";
+	weapons[] = {"cgqc_gun_base_pilot", "cgqc_gun_p99_wood", "Rangefinder", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "40Rnd_46x30SD_mas_can_mag", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "SmokeShell", "SmokeShell", "SmokeShell"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR"};
+	linkedItems[] = {"cgqc_vest_mk1_black", "cgqc_helmet_heli_black", "G_mas_can_bala_b", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_L", "", "optic_ACO_grn", "", "", "", "", ""};
+};
+class CGQC_Soldat_Sniper : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "Sniper";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_kitbag";
+	weapons[] = {"cgqc_gun_base_sniper", "cgqc_gun_p99_wood", "Laserdesignator_01_khk_F", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade", "B_IR_Grenade", "7Rnd_mas_can_408_APDS_Mag", "7Rnd_mas_can_408_APDS_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "7Rnd_mas_can_408_Mag", "ACE_M84", "ACE_M84"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool", "ACE_ATragMX", "ACE_Kestrel4500"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_ar", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "", "", "optic_LRPS", "", "", "", "", ""};
+};
+class CGQC_Soldat_Marksman : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "Marksman";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_kitbag";
+	weapons[] = {"cgqc_gun_base_marksman", "cgqc_gun_p99_wood", "Laserdesignator_01_khk_F", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade", "B_IR_Grenade", "ACE_M84", "ACE_M84", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag", "ACE_20Rnd_762x51_M118LR_Mag"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool", "ACE_ATragMX", "ACE_Kestrel4500"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_ar", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_B", "ACE_acc_pointer_green", "optic_AMS", "bipod_01_F_blk", "", "", "", ""};
+};
+class CGQC_Soldat_Javelin : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "AT (Javelin)";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_carryall";
+	weapons[] = {"cgqc_gun_base_rifleman", "cgqc_gun_mk1_Javelin", "cgqc_gun_p99_wood", "Rangefinder", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade", "jav_AT_mas_can", "jav_AT_mas_can", "jav_AT_mas_can", "jav_AT_mas_can"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_lr", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_M", "ACE_acc_pointer_green", "optic_Arco_blk_F", "", "", "", "", ""};
+};
+class CGQC_Soldat_Grenadier : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "Grenadier";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_assault";
+	weapons[] = {"cgqc_gun_base_grenadier", "cgqc_gun_p99_wood", "Rangefinder", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "ACE_30Rnd_556x45_Stanag_Mk262_mag", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeBlue_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_SmokeRed_Grenade_shell", "1Rnd_Smoke_Grenade_shell", "1Rnd_Smoke_Grenade_shell"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_lr", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_M", "ACE_acc_pointer_green", "optic_Arco_blk_F", "", "", "", "", ""};
+};
+class CGQC_Soldat_LMG : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "LMG";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_assault";
+	weapons[] = {"cgqc_gun_base_lmg", "cgqc_gun_p99_wood", "Rangefinder", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "200Rnd_mas_can_556x45_Drum_Mag_F", "200Rnd_mas_can_556x45_Drum_Mag_F", "200Rnd_mas_can_556x45_Drum_Mag_F", "200Rnd_mas_can_556x45_Drum_Mag_F", "200Rnd_mas_can_556x45_Drum_Mag_F", "200Rnd_mas_can_556x45_Drum_Mag_F", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade", "200Rnd_mas_can_556x45_Drum_Mag_F", "200Rnd_mas_can_556x45_Drum_Mag_F", "200Rnd_mas_can_556x45_Drum_Mag_F", "200Rnd_mas_can_556x45_Drum_Mag_F"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_lr", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_M", "ACE_acc_pointer_green", "optic_Arco_blk_F", "", "", "", "", ""};
+};
+class CGQC_Soldat_HMG : CGQC_Soldat_Base
+{
+	author = "silent1";
+	faction = "CGQC";
+	displayName = "HMG";
+	editorSubcategory = "EdSubcat_cgqc_Training";
+	side = 1;
+	uniformClass = "cgqc_uniform_mk1";
+	backpack = "cgqc_pack_mk1_assault";
+	weapons[] = {"cgqc_gun_base_hmg", "cgqc_gun_p99_wood", "Rangefinder", "Throw", "Put"};
+	magazines[] = {"16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "ACE_M84", "ACE_M84", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "ACE_Chemlight_HiRed", "ACE_Chemlight_IR", "SmokeShell", "SmokeShell", "SmokeShell", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellBlue", "SmokeShellRed", "SmokeShellRed", "SmokeShellRed", "B_IR_Grenade", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag", "150Rnd_mas_can_762x51_Mag"};
+	items[] = {"ACRE_PRC343", "ACRE_PRC152", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_epinephrine", "ACE_epinephrine", "ACE_EarPlugs", "ACE_morphine", "ACE_morphine", "ACE_splint", "ACE_tourniquet", "ACE_tourniquet", "ACE_CableTie", "ACE_CableTie", "ACE_MapTools", "ACE_IR_Strobe_Item", "ACE_microDAGR", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_fieldDressing", "ACE_salineIV_500", "ACE_salineIV_500", "ACE_EntrenchingTool"};
+	linkedItems[] = {"cgqc_vest_mk1_tan_lr", "cgqc_helmet_mk1", "G_mas_can_shemag_gog_l", "ItemMap", "ItemCompass", "ItemWatch", "ItemGPS", "NVGoggles_mas_can_hv", "muzzle_snds_H_MG_blk_F", "ACE_acc_pointer_green", "optic_Arco_blk_F", "", "", "", "", ""};
 };
