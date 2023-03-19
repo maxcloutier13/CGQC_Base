@@ -42,6 +42,7 @@ class cfgVehicles {
 class cfgFunctions {
 	#include "cfg_functions.cpp"
 };
-
+// Groups
+#include "cfg_groups.cpp"
 // Custom events
 #include "cfg_eventhandlers.cpp"

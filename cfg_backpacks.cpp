@@ -739,6 +739,79 @@ class cgqc_pack_mk1_javelin : cgqc_pack_mk1_kitbag
     {
     };
 };
+class cgqc_pack_mk1_maaws : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_MRAWS_HEAT_F
+        {
+            count = 3;
+            magazine = "MRAWS_HEAT_F";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
 class cgqc_pack_mk1_lmg : cgqc_pack_mk1_kitbag
 {
     scope = 1;

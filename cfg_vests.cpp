@@ -1,12 +1,11 @@
 class Vest_NoCamo_Base;
 class V_PlateCarrier1_rgr: Vest_NoCamo_Base
 {
-    scope = 0;
     class ItemInfo;
 };
 class V_mas_can_PlateCarrier1_rgr: V_PlateCarrier1_rgr
 {
-    scope = 0;
+    scope = 1;
     class ItemInfo: ItemInfo
     {
         //uniformModel = "\mas_can_lite\vest\mas_plate_carrier_OP";
@@ -43,7 +42,7 @@ class V_mas_can_PlateCarrier1_rgr: V_PlateCarrier1_rgr
 };
 class V_mas_can_PlateCarrierAR_rgr: V_mas_can_PlateCarrier1_rgr
 {
-    scope = 0;
+    scope = 1;
     class ItemInfo: ItemInfo
     {
         //uniformModel = "\mas_can_lite\vest\mas_plate_carrier_OP";
@@ -80,7 +79,7 @@ class V_mas_can_PlateCarrierAR_rgr: V_mas_can_PlateCarrier1_rgr
 };
 class V_mas_can_PlateCarrierLR_rgr: V_mas_can_PlateCarrier1_rgr
 {
-    scope = 0;
+    scope = 1;
     class ItemInfo: ItemInfo
     {
         //uniformModel = "\mas_can_lite\vest\mas_plate_carrier_OP";
@@ -117,7 +116,7 @@ class V_mas_can_PlateCarrierLR_rgr: V_mas_can_PlateCarrier1_rgr
 };
 class V_mas_can_PlateCarrierRF_rgr: V_mas_can_PlateCarrier1_rgr
 {
-    scope = 0;
+    scope = 1;
     class ItemInfo: ItemInfo
     {
         //uniformModel = "\mas_can_lite\vest\mas_plate_carrier_OP";
@@ -153,52 +152,52 @@ class V_mas_can_PlateCarrierRF_rgr: V_mas_can_PlateCarrier1_rgr
     };
 };
 class V_mas_can_PlateCarrierLR_tan: V_mas_can_PlateCarrierLR_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierRF_tan: V_mas_can_PlateCarrierRF_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierAR_tan: V_mas_can_PlateCarrierAR_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrier1_tan: V_mas_can_PlateCarrier1_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrier1_green: V_mas_can_PlateCarrier1_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierLR_green: V_mas_can_PlateCarrierLR_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierRF_green: V_mas_can_PlateCarrierRF_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierAR_green: V_mas_can_PlateCarrierAR_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrier1_swat: V_mas_can_PlateCarrier1_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierLR_swat: V_mas_can_PlateCarrierLR_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierRF_swat: V_mas_can_PlateCarrierRF_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierAR_swat: V_mas_can_PlateCarrierAR_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrier1_wint: V_mas_can_PlateCarrier1_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierLR_wint: V_mas_can_PlateCarrierLR_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierRF_wint: V_mas_can_PlateCarrierRF_rgr{
-    scope = 0;
+    scope = 1;
 };
 class V_mas_can_PlateCarrierAR_wint: V_mas_can_PlateCarrierAR_rgr{
-    scope = 0;
+    scope = 1;
 };
 //class rhsgref_otv_khaki;
 class V_Rangemaster_belt;
