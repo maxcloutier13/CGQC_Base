@@ -349,7 +349,7 @@ class cgqc_pack_mk1_tank_driver : cgqc_pack_mk1_magic
 };
 
 // Unit backpacks
-class cgqc_pack_mk1_rifleman : cgqc_pack_mk1_kitbag
+class cgqc_pack_mk1_rifleman : cgqc_pack_mk1_assault
 {
     scope = 1;
     class TransportMagazines
@@ -515,7 +515,7 @@ class cgqc_pack_mk1_medic : cgqc_pack_mk1_kitbag
     {
     };
 };
-class cgqc_pack_mk1_sniper : cgqc_pack_mk1_kitbag
+class cgqc_pack_mk1_sniper : cgqc_pack_mk1_carryall
 {
     scope = 1;
     class TransportMagazines
@@ -1073,7 +1073,7 @@ class cgqc_pack_mk1_tl : cgqc_pack_mk1_radiobag
     {
     };
 };
-class cgqc_pack_mk1_grenadier : cgqc_pack_mk1_radiobag
+class cgqc_pack_mk1_grenadier : cgqc_pack_mk1_assault
 {
     scope = 1;
     class TransportMagazines
@@ -1205,6 +1205,16 @@ class cgqc_pack_mk1_engineer : cgqc_pack_mk1_carryall
         {
             count = 5;
             magazine = "ACE_30Rnd_556x45_Stanag_Mk262_mag";
+        };
+        class _xx_DemoCharge_Remote_Mag
+        {
+            count = 2;
+            magazine = "DemoCharge_Remote_Mag";
+        };
+        class _xx_ASLAMDirectionalMine_Wire_Mag
+        {
+            count = 2;
+            magazine = "SLAMDirectionalMine_Wire_Mag";
         };
     };
     class TransportItems
