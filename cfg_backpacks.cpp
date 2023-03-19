@@ -203,7 +203,7 @@ class cgqc_pack_mk1_kitbag_white : B_Kitbag_rgr // Winter
     hiddenSelectionsTextures[] = {"\cgqc_base\containers\cgqc_kitbag_white.paa"};
 };
 // Radio Backpacks --------------------------------------------------------------------------------------
-class cgqc_pack_mk1_Radiobag: B_RadioBag_01_eaf_F // Base
+class cgqc_pack_mk1_radiobag: B_RadioBag_01_eaf_F // Base
 {
     scope = 2;
     author = "silent1";
@@ -329,3 +329,736 @@ class cgqc_pack_mk1_tank_driver : cgqc_pack_mk1_magic
     {
     };
 };
+
+// Unit backpacks
+class cgqc_pack_mk1_rifleman : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_HandGrenade
+        {
+            count = 4;
+            magazine = "HandGrenade";
+        };
+        class _xx_ACE_30Rnd_556x45_Stanag_Mk262_mag
+        {
+            count = 5;
+            magazine = "ACE_30Rnd_556x45_Stanag_Mk262_mag";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+class cgqc_pack_mk1_medic : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_SmokeShellPurple
+        {
+            count = 3;
+            magazine = "SmokeShellPurple";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 50;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 7;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+        class _xx_ACE_salineIV
+        {
+            count = 4;
+            name = "ACE_salineIV";
+        };
+        class _xx_ACE_morphine
+        {
+            count = 20;
+            name = "ACE_morphine";
+        };
+        class _xx_ACE_epinephrine
+        {
+            count = 20;
+            name = "ACE_epinephrine";
+        };
+        class _xx_ACE_splint
+        {
+            count = 4;
+            name = "ACE_splint";
+        };
+        class _xx_ACE_tourniquet
+        {
+            count = 4;
+            name = "ACE_tourniquet";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+class cgqc_pack_mk1_sniper : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+
+        class _xx_7Rnd_mas_can_408_Mag
+        {
+            count = 20;
+            magazine = "7Rnd_mas_can_408_Mag";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+        class _xx_ACE_ATragMX
+        {
+            count = 1;
+            name = "ACE_ATragMX";
+        };
+        class _xx_ACE_Kestrel4500
+        {
+            count = 1;
+            name = "ACE_Kestrel4500";
+        };
+        
+    };
+    class TransportWeapons
+    {
+    };
+};
+class cgqc_pack_mk1_marksman : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_ACE_20Rnd_762x51_Mk319_Mod_0_Mag
+        {
+            count = 8;
+            magazine = "ACE_20Rnd_762x51_Mk319_Mod_0_Mag";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+        class _xx_ACE_ATragMX
+        {
+            count = 1;
+            name = "ACE_ATragMX";
+        };
+        class _xx_ACE_Kestrel4500
+        {
+            count = 1;
+            name = "ACE_Kestrel4500";
+        };
+        
+    };
+    class TransportWeapons
+    {
+    };
+};
+class cgqc_pack_mk1_javelin : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_jav_AT_mas_can
+        {
+            count = 3;
+            magazine = "jav_AT_mas_can";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+class cgqc_pack_mk1_lmg : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_HandGrenade
+        {
+            count = 4;
+            magazine = "HandGrenade";
+        };
+        class _xx_200Rnd_mas_can_556x45_Drum_Mag_F
+        {
+            count = 5;
+            magazine = "200Rnd_mas_can_556x45_Drum_Mag_F";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+class cgqc_pack_mk1_hmg : cgqc_pack_mk1_kitbag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_HandGrenade
+        {
+            count = 4;
+            magazine = "HandGrenade";
+        };
+        class _xx_200Rnd_mas_can_556x45_Drum_Mag_F
+        {
+            count = 5;
+            magazine = "150Rnd_mas_can_762x51_Mag";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+class cgqc_pack_mk1_tl : cgqc_pack_mk1_radiobag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_1Rnd_HE_Grenade_shell
+        {
+            count = 10;
+            magazine = "1Rnd_HE_Grenade_shell";
+        };
+        class _xx_UGL_FlareRed_F
+        {
+            count = 3;
+            magazine = "1Rnd_SmokeRed_Grenade_shell";
+        };
+        class _xx_1Rnd_SmokeBlue_Grenade_shell
+        {
+            count = 3;
+            magazine = "1Rnd_SmokeBlue_Grenade_shell";
+        };
+        class _xx_1Rnd_Smoke_Grenade_shell
+        {
+            count = 3;
+            magazine = "1Rnd_Smoke_Grenade_shell";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+class cgqc_pack_mk1_grenadier : cgqc_pack_mk1_radiobag
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_1Rnd_HE_Grenade_shell
+        {
+            count = 10;
+            magazine = "1Rnd_HE_Grenade_shell";
+        };
+        class _xx_UGL_FlareRed_F
+        {
+            count = 3;
+            magazine = "UGL_FlareRed_F";
+        };
+        class _xx_1Rnd_SmokeBlue_Grenade_shell
+        {
+            count = 3;
+            magazine = "1Rnd_SmokeBlue_Grenade_shell";
+        };
+        class _xx_1Rnd_Smoke_Grenade_shell
+        {
+            count = 3;
+            magazine = "1Rnd_Smoke_Grenade_shell";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_FF_Painkiller
+        {
+            count = 5;
+            name = "FF_Painkiller";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+    };
+    class TransportWeapons
+    {
+    };
+};
+
