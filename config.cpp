@@ -34,8 +34,7 @@ class CfgEditorSubcategories {
 class cfgVehicles {
 	#include "cfg_flags.cpp"
 	#include "cfg_units.cpp"
-	#include "cfg_backpacks.cpp"
-	#include "cfg_items.cpp"
+	#include "cfg_containers.cpp"
 };
 
 // Custom functions
