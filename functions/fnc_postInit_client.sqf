@@ -96,6 +96,9 @@ if (cgqc_player_known) then {
 	};
 	cgqc_player_patch_found = true;
 
+	// Prep les variables de l'arsenal dynamique
+    #include "\cgqc_base\functions\fnc_initArsenal.sqf";
+
 	//Find beret
 	switch (cgqc_player_rank) do {
 		case 1: {  // Sdt

@@ -7,7 +7,6 @@ class B_Kitbag_Base;
 class B_Kitbag_rgr;
 class B_mas_can_Kitbag_d;
 class B_mas_can_Kitbag_m;
-//class rhssaf_kitbag_digital;
 class B_mas_can_Kitbag_LW;
 class B_RadioBag_01_black_F;
 class B_RadioBag_01_tropic_F;
@@ -19,9 +18,28 @@ class B_Carryall_mcamo;
 class B_Carryall_khk;
 class B_Carryall_oucamo;
 class B_Parachute;
-//class UK3CB_AAF_B_B_ASS_DIGI_BLK;
-//class UK3CB_LNM_B_B_CARRYALL_FLK_02;
-//class UK3CB_CW_US_B_LATE_B_RIF_04;
+class B_supplyCrate_F;
+// == Boxes =======================================================================================
+class cgqc_box_mk2_arsenal : B_supplyCrate_F
+{
+    scope = 2;
+    author = "silent1";
+    _generalMacro = "cgqc_box_mk2_arsenal";
+    displayName = "CGQC MK2 Arsenal";
+    hiddenSelectionsTextures[] = {"\CGQC_base\containers\cgqc_box_mk2.paa"};
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_supplyCrate_F.jpg";
+    ace_cargo_canLoad = 0;  // Enables the object to be loaded (1-yes, 0-no)
+    ace_cargo_noRename = 1;
+    class EventHandlers
+    {
+        init = "_this execVM '\cgqc_base\factions\cgqc_box_mk2.sqf'";
+    };
+    class TransportMagazines{};
+    class TransportWeapons{};
+    class TransportItems{};
+    class TransportBackpacks{};
+};
+// == Backpacks =======================================================================================
 class cgqc_pack_mk1_magic : B_AssaultPack_rgr
 {
     scope = 2;
@@ -576,6 +594,11 @@ class cgqc_pack_mk1_sniper : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ACE_Kestrel4500";
         };
+        class _xx_ACE_Vector
+        {
+            count = 1;
+            name = "ACE_Vector";
+        };
         
     };
     class TransportWeapons
@@ -660,7 +683,11 @@ class cgqc_pack_mk1_marksman : cgqc_pack_mk1_kitbag
             count = 1;
             name = "ACE_Kestrel4500";
         };
-        
+        class _xx_ACE_Vector
+        {
+            count = 1;
+            name = "ACE_Vector";
+        };
     };
     class TransportWeapons
     {
@@ -1134,4 +1161,101 @@ class cgqc_pack_mk1_grenadier : cgqc_pack_mk1_radiobag
     {
     };
 };
-
+class cgqc_pack_mk1_engineer : cgqc_pack_mk1_carryall
+{
+    scope = 1;
+    class TransportMagazines
+    {
+        class _xx_ACE_Chemlight_HiRed
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_HiRed";
+        };
+        class _xx_ACE_Chemlight_IR
+        {
+            count = 1;
+            magazine = "ACE_Chemlight_IR";
+        };
+        class _xx_SmokeShell
+        {
+            count = 3;
+            magazine = "SmokeShell";
+        };
+        class _xx_SmokeShellBlue
+        {
+            count = 3;
+            magazine = "SmokeShellBlue";
+        };
+        class _xx_SmokeShellRed
+        {
+            count = 3;
+            magazine = "SmokeShellRed";
+        };
+        class _xx_B_IR_Grenade
+        {
+            count = 1;
+            magazine = "B_IR_Grenade";
+        };
+        class _xx_HandGrenade
+        {
+            count = 4;
+            magazine = "HandGrenade";
+        };
+        class _xx_ACE_30Rnd_556x45_Stanag_Mk262_mag
+        {
+            count = 5;
+            magazine = "ACE_30Rnd_556x45_Stanag_Mk262_mag";
+        };
+    };
+    class TransportItems
+    {
+        class _xx_ACE_fieldDressing
+        {
+            count = 10;
+            name = "ACE_fieldDressing";
+        };
+        class _xx_ACE_salineIV_500
+        {
+            count = 2;
+            name = "ACE_salineIV_500";
+        };
+        class _xx_ACE_EntrenchingTool
+        {
+            count = 1;
+            name = "ACE_EntrenchingTool";
+        };
+        class _xx_G_mas_can_gasmask
+        {
+            count = 1;
+            name = "G_mas_can_gasmask";
+        };
+        class _xx_ACE_DefusalKit
+        {
+            count = 1;
+            name = "ACE_DefusalKit";
+        };
+        class _xx_ACE_M26_Clacker
+        {
+            count = 1;
+            name = "ACE_M26_Clacker";
+        };
+        class _xx_ToolKit
+        {
+            count = 1;
+            name = "ToolKit";
+        };
+        class _xx_ACE_SpraypaintGreen
+        {
+            count = 1;
+            name = "ACE_SpraypaintGreen";
+        };
+        class _xx_ACE_SpraypaintRed
+        {
+            count = 1;
+            name = "ACE_SpraypaintRed";
+        }; 
+    };
+    class TransportWeapons
+    {
+    };
+};

@@ -7,6 +7,7 @@ cgqc_preInit_done = false;
 cgqc_postInitClient_done = false;
 cgqc_postInitServer_done = false;
 cgqc_intro_running = false;
+cgqc_mk2_arsenal_init_done = false;
 // *** Player **********************
 cgqc_player_known = true;
 cgqc_player_patch = "";
